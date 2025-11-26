@@ -74,6 +74,9 @@ export default function Index() {
               <button onClick={() => scrollToSection('catalog')} className="text-sm font-medium hover:text-primary transition-colors">
                 Каталог
               </button>
+              <button onClick={() => scrollToSection('gallery')} className="text-sm font-medium hover:text-primary transition-colors">
+                Галерея
+              </button>
               <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:text-primary transition-colors">
                 О продукте
               </button>
@@ -163,7 +166,136 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-gray-50">
+        <section id="gallery" className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-4">Галерея</h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Наши столики в реальных интерьерах наших клиентов
+            </p>
+
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <span className="w-2 h-8 bg-primary rounded"></span>
+                Nordic Light
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/dc443c14-796d-4a6f-a08a-023de190957c.jpg" 
+                    alt="Nordic Light в скандинавском интерьере"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/9cab5dcb-9698-45ba-a5a5-d18f0e30678d.jpg" 
+                    alt="Nordic Light в солнечной квартире"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/07bebeee-cb1c-4d80-9a73-afdfbd0f8c6d.jpg" 
+                    alt="Nordic Light крупным планом"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                <video 
+                  className="w-full h-full object-cover"
+                  controls
+                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/dc443c14-796d-4a6f-a08a-023de190957c.jpg"
+                >
+                  <source src="/videos/nordic-light-demo.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает видео
+                </video>
+              </div>
+            </div>
+
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <span className="w-2 h-8 bg-primary rounded"></span>
+                Urban Black
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/66d03758-d97e-4c8d-b945-b28a4a97772a.jpg" 
+                    alt="Urban Black в индустриальном лофте"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/4b237ba5-673a-48ca-8d2c-de6ba79d9f26.jpg" 
+                    alt="Urban Black в городской квартире"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2e6cce36-b2a0-4d29-98ec-31b1f8ec46f7.jpg" 
+                    alt="Urban Black детали"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                <video 
+                  className="w-full h-full object-cover"
+                  controls
+                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/66d03758-d97e-4c8d-b945-b28a4a97772a.jpg"
+                >
+                  <source src="/videos/urban-black-demo.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает видео
+                </video>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <span className="w-2 h-8 bg-primary rounded"></span>
+                Marble Gold
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2f43d5bc-8ebf-4b15-aa2e-f0346a2ad454.jpg" 
+                    alt="Marble Gold в пентхаусе"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/1e10eb4e-53be-4e8d-aacd-f85b7eac07ae.jpg" 
+                    alt="Marble Gold детали мрамора"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/c290841d-6ec3-4e3a-be29-e388dbee341f.jpg" 
+                    alt="Marble Gold в роскошной квартире"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                <video 
+                  className="w-full h-full object-cover"
+                  controls
+                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2f43d5bc-8ebf-4b15-aa2e-f0346a2ad454.jpg"
+                >
+                  <source src="/videos/marble-gold-demo.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает видео
+                </video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold mb-8 text-center">О продукте</h2>
@@ -225,7 +357,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="delivery" className="py-20 bg-white">
+        <section id="delivery" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-4xl font-bold mb-8 text-center">Доставка и оплата</h2>
@@ -286,7 +418,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="contacts" className="py-20 bg-gray-50">
+        <section id="contacts" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-8">Контакты</h2>
@@ -351,6 +483,9 @@ export default function Index() {
             <div className="flex gap-6">
               <button onClick={() => scrollToSection('catalog')} className="text-sm hover:opacity-80 transition-opacity">
                 Каталог
+              </button>
+              <button onClick={() => scrollToSection('gallery')} className="text-sm hover:opacity-80 transition-opacity">
+                Галерея
               </button>
               <button onClick={() => scrollToSection('about')} className="text-sm hover:opacity-80 transition-opacity">
                 О нас
