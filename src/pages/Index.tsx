@@ -89,17 +89,25 @@ export default function Index() {
       </header>
 
       <main>
-        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
-          <div className="container mx-auto px-4 text-center z-10">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ 
+              backgroundImage: 'url(https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/30a36c19-04eb-4f74-80c0-8c33bd46b0d8.jpg)',
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+          </div>
+          <div className="container mx-auto px-4 text-center z-10 relative">
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-white drop-shadow-2xl">
               Складные столики
               <br />
               <span className="text-primary">нового поколения</span>
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/95 mb-8 max-w-2xl mx-auto drop-shadow-lg">
               Минималистичный дизайн, компактное хранение, максимум стиля
             </p>
-            <Button size="lg" onClick={() => scrollToSection('catalog')} className="text-lg px-8">
+            <Button size="lg" onClick={() => scrollToSection('catalog')} className="text-lg px-8 shadow-2xl">
               Смотреть каталог
               <Icon name="ArrowRight" className="ml-2" size={20} />
             </Button>
