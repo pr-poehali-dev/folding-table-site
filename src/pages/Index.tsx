@@ -173,12 +173,8 @@ export default function Index() {
               Наши столики в реальных интерьерах наших клиентов
             </p>
 
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span className="w-2 h-8 bg-primary rounded"></span>
-                Nordic Light
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="mb-20">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                   <img 
                     src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/dc443c14-796d-4a6f-a08a-023de190957c.jpg" 
@@ -201,24 +197,38 @@ export default function Index() {
                   />
                 </div>
               </div>
-              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
-                <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/dc443c14-796d-4a6f-a08a-023de190957c.jpg"
-                >
-                  <source src="/videos/nordic-light-demo.mp4" type="video/mp4" />
-                  Ваш браузер не поддерживает видео
-                </video>
+              
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                  <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/dc443c14-796d-4a6f-a08a-023de190957c.jpg"
+                  >
+                    <source src="/videos/nordic-light-demo.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео
+                  </video>
+                </div>
+                
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="text-3xl font-bold mb-4">Nordic Light</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Воплощение скандинавского минимализма в складной мебели. Светлый дуб создаёт атмосферу уюта, 
+                    а продуманный механизм позволяет легко трансформировать пространство. Идеальное решение для тех, 
+                    кто ценит функциональность и чистоту линий.
+                  </p>
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-4xl font-bold text-primary">12 990 ₽</span>
+                  </div>
+                  <Button size="lg" className="w-full" onClick={() => setSelectedProduct(products[0])}>
+                    Заказать Nordic Light
+                  </Button>
+                </div>
               </div>
             </div>
 
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span className="w-2 h-8 bg-primary rounded"></span>
-                Urban Black
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="mb-20">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                   <img 
                     src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/66d03758-d97e-4c8d-b945-b28a4a97772a.jpg" 
@@ -241,24 +251,38 @@ export default function Index() {
                   />
                 </div>
               </div>
-              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
-                <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/66d03758-d97e-4c8d-b945-b28a4a97772a.jpg"
-                >
-                  <source src="/videos/urban-black-demo.mp4" type="video/mp4" />
-                  Ваш браузер не поддерживает видео
-                </video>
+              
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="text-3xl font-bold mb-4">Urban Black</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Брутальность металла встречается с благородством ореха. Индустриальный стиль для современных 
+                    городских интерьеров. Прочная конструкция и геометричные формы создают характер, 
+                    а механизм трансформации работает безупречно.
+                  </p>
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-4xl font-bold text-primary">15 490 ₽</span>
+                  </div>
+                  <Button size="lg" className="w-full" onClick={() => setSelectedProduct(products[1])}>
+                    Заказать Urban Black
+                  </Button>
+                </div>
+                
+                <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                  <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/66d03758-d97e-4c8d-b945-b28a4a97772a.jpg"
+                  >
+                    <source src="/videos/urban-black-demo.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео
+                  </video>
+                </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <span className="w-2 h-8 bg-primary rounded"></span>
-                Marble Gold
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow">
                   <img 
                     src="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2f43d5bc-8ebf-4b15-aa2e-f0346a2ad454.jpg" 
@@ -281,15 +305,33 @@ export default function Index() {
                   />
                 </div>
               </div>
-              <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
-                <video 
-                  className="w-full h-full object-cover"
-                  controls
-                  poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2f43d5bc-8ebf-4b15-aa2e-f0346a2ad454.jpg"
-                >
-                  <source src="/videos/marble-gold-demo.mp4" type="video/mp4" />
-                  Ваш браузер не поддерживает видео
-                </video>
+              
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
+                  <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    poster="https://cdn.poehali.dev/projects/be45f5ed-5c1f-464e-94cd-bba3e3ef23a3/files/2f43d5bc-8ebf-4b15-aa2e-f0346a2ad454.jpg"
+                  >
+                    <source src="/videos/marble-gold-demo.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео
+                  </video>
+                </div>
+                
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="text-3xl font-bold mb-4">Marble Gold</h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Роскошь и элегантность премиум-класса. Натуральный мрамор в сочетании с золотыми акцентами — 
+                    выбор тех, кто не идёт на компромиссы. Каждый столик уникален благодаря естественному рисунку камня. 
+                    Украшение любого интерьера высокого уровня.
+                  </p>
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-4xl font-bold text-primary">24 990 ₽</span>
+                  </div>
+                  <Button size="lg" className="w-full" onClick={() => setSelectedProduct(products[2])}>
+                    Заказать Marble Gold
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
